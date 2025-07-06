@@ -16,6 +16,7 @@ def load_langgraph_agenticai_app():
     ##Load UI
     ui=LoadStreamlitUI()
     user_input=ui.load_streamlit_ui()
+    print(user_input)
 
     if not user_input:
         st.error("Error: Failed to load user input from the UI.")
